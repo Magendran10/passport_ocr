@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport OCR Processor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Passport OCR Processor 🛂</h1>
+            <p>Use AI to extract data from one or more passport images instantly.</p>
+        </header>
+
+        <section class="upload-section">
+            <form id="upload-form">
+                <div class="file-drop-area">
+                    <span class="fake-btn">Choose Files</span>
+                    <span class="file-msg">or drop files here</span>
+                    <input class="file-input" type="file" id="file-input" accept="image/jpeg, image/png, image/bmp, image/tiff, image/webp" multiple>
+                </div>
+                <div id="file-preview-wrapper" class="hidden">
+                    <h4>Selected Files:</h4>
+                    <div id="file-preview-list"></div>
+                </div>
+                <button type="submit" id="submit-btn" disabled>Process Files</button>
+            </form>
+        </section>
+
+        <div id="results-loader" class="loader-wrapper hidden">
+            <div class="loader"></div>
+            <p>Analyzing documents, please wait...</p>
+        </div>
+
+        <section id="results-section" class="hidden">
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
