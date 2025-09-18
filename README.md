@@ -418,7 +418,7 @@ confidence = (ocr_confidence * 0.6) + (completeness_score * 0.4)
 
 ```bash
 # Clone and setup
-git clone https://github.com/your-username/passport-ocr-processor.git
+git clone https://github.com/Magendran10/passport_ocr.git
 cd passport-ocr-processor
 
 # Create virtual environment
